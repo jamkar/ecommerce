@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    font-family: "Liberation Sans", serif;
+}
+.header {
+    background-color: aqua;
+}
+.content {
+    background-color: bisque;
+}
+.footer {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 5px;
+}
+.navbar {
+    padding: 0;
+    list-style-type: none;
+    background-color: rgba(0, 90, 49, 0.71);
+    overflow: hidden;
+}
+.navbar li {
+    float: left;
+}
+.navbar li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+}
+.navbar li a:hover {
+    background-color: rgba(203, 227, 45, 1.0);
+    cursor: hand;
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE struts PUBLIC
+        "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+        "http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+    <package name="user" namespace="/user" extends="struts-default">
+        <action name="home">
+            <result>/WEB-INF/views/struts/login.jsp</result>
+        </action>
+        <action name="login" class="struts.LoginAction">
+            <result name="success">/WEB-INF/views/struts/welcome.jsp</result>
+            <result name="error">/WEB-INF/views/struts/error.jsp</result>
+        </action>
+    </package>
+
+</struts>
