@@ -1,0 +1,17 @@
+/*table, th, td {*/
+    /*border: 1px solid black;*/
+/*}*/
+
+/*th, td {*/
+    /*padding: 15px;*/
+    /*text-align: left;*/
+/*}*/
+
+.rowSelected {
+    background-color: lightgrey;
+}
+
+.fl {
+    float: left;
+    margin-right: 10px;
+}

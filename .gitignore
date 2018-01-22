@@ -1,3 +1,7 @@
 .idea
 *.iml
 target
+bookstore-jaxb.xml
+src/main/java/Test.java
+src/main/java/controller/ArticlesController.java
+src/test/java/service/

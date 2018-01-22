@@ -2,6 +2,7 @@ package controller;
 
 import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
@@ -15,6 +16,7 @@ import static security.SecurityUtils.hashPassword;
 
 @Controller
 @RequestMapping(value = "/user")
+@Scope(scopeName = "prototype")
 public class UserController {
 
     @Autowired
@@ -23,6 +25,8 @@ public class UserController {
     @RequestMapping(value = "/{id}", method = RequestMethod.GET)
     public ResponseEntity<User> getUserById(@PathVariable long id) {
         User user = userService.getById(id);
+        System.out.println(this);
+        System.out.println(userService);
         return new ResponseEntity<User>(user, HttpStatus.OK);
     }
 

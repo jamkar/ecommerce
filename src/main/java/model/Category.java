@@ -3,7 +3,7 @@ package model;
 import javax.persistence.*;
 import java.util.List;
 
-@Entity
+@Entity()
 @Table(name = "category")
 public class Category {
 

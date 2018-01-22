@@ -1,11 +1,11 @@
 package config;
 
-import model.Product;
 import org.apache.commons.dbcp2.BasicDataSource;
 import org.hibernate.SessionFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.ImportResource;
 import org.springframework.orm.hibernate5.HibernateTransactionManager;
 import org.springframework.orm.hibernate5.LocalSessionFactoryBean;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
@@ -17,7 +17,7 @@ import java.util.Properties;
 @Configuration
 @ComponentScan(basePackages = {"service", "dao"})
 @EnableTransactionManagement
-@Transactional
+@ImportResource("classpath:spring-jms.xml")
 public class RootConfig {
 
     @Bean

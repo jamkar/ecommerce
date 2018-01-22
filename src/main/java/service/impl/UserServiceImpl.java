@@ -3,6 +3,8 @@ package service.impl;
 import dao.UserDao;
 import model.User;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import service.UserService;
@@ -11,6 +13,7 @@ import java.util.List;
 
 @Service
 @Transactional
+@Scope(scopeName = "request", proxyMode = ScopedProxyMode.INTERFACES)
 public class UserServiceImpl implements UserService {
 
     @Autowired

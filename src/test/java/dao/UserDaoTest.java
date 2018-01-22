@@ -2,6 +2,7 @@ package dao;
 
 import model.User;
 
+import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertTrue;
 
 //@RunWith(SpringJUnit4ClassRunner.class)
@@ -15,7 +16,7 @@ public class UserDaoTest {
     public void testAddAndGet() {
         User user = createUser();
         userDao.add(user);
-        assertTrue(user != null);
+        assertNotNull(user);
     }
 
     private User createUser() {

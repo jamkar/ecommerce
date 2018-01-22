@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    font-family: "Noto Sans Armenian","Open Sans","lucida grande",tahoma,arial,sans-serif;
+    font-size: 13px;
+    line-height: 1.4;
+    background-color: #f4f4f4;
+}
+
+.header {
+    height: 60px;
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-bottom: 1px solid #e6e6e6;
+}
+
+.c {
+    width: 1000px;
+    max-width: 1000px;
+    height: 52px;
+    margin: auto;
+    padding: 10px 0 0 0;
+}
+
+.l {
+    float: left;
+    width: 120px;
+    height: 32px;
+    background: url(../img/p.png) 0 -120px;
+    margin: 0 2px 0 0;
+}
+
+.r {
+    float: right;
+}
+
+#searchBox {
+    width: 428px;
+    height: 28px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 4px 0 4px 30px;
+    margin: 0 0 0 5px;
+}
+
+.content {
+    background-color: red;
+}
+
+.menu {
+    background-color: yellow;
+}
+
+.footer {
+    background-color: black;
+}
+
