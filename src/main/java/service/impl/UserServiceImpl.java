@@ -13,7 +13,8 @@ import java.util.List;
 
 @Service
 @Transactional
-@Scope(scopeName = "request", proxyMode = ScopedProxyMode.INTERFACES)
+@Scope(scopeName = "request", proxyMode = ScopedProxyMode.TARGET_CLASS)
+//@Scope(scopeName = "prototype")
 public class UserServiceImpl implements UserService {
 
     @Autowired

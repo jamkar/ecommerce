@@ -16,7 +16,7 @@ import static security.SecurityUtils.hashPassword;
 
 @Controller
 @RequestMapping(value = "/user")
-@Scope(scopeName = "prototype")
+//@Scope(scopeName = "prototype")
 public class UserController {
 
     @Autowired
